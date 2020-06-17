@@ -1,27 +1,40 @@
 var array : Array<number> = [1,2,3,4,5,6,7,8,9,10];
-
+console.log("OK");
 function multiplybyOne() {
+    let output : any = ""
     for (let i = 0; i < array.length; i++) {
         let result : number = array[i]*1;
-        return `${array[i]} X 1 = ${result}`;
+        output += `${array[i]} X 1 = ${result} <br>`;
     }
+    return output;
 }
 
 function multiplybyTwo() {
+    let output : any = ""
     for (let i = 0; i < array.length; i++) {
         let result : number = array[i]*2;
-        return `${array[i]} X 2 = ${result}`;
+        output += `${array[i]} X 1 = ${result} <br> `;
     }
+    return output;
 }
 
-let multiplybyTen = function() {
+function multiplybyTen() {
+    let output : any = ""
     for (let i = 0; i < array.length; i++) {
         let result : number = array[i]*10;
-        return `${array[i]} X 10 = ${result}`;
+        output += `${array[i]} X 1 = ${result} <br>`;
     }
+    return output;
 }
 
-let results : any = document.getElementById("resultOne");
-let btn : any = document.getElementById("one");
-btn.addEventlistener("click", multiplybyOne)
+$(document).ready(function() {
+    $("#one").on("click", function(){
+        $("#resultOne").append(multiplybyOne());
+        $("#resultOne").append(`<hr>`);
+        $("#resultOne").append(multiplybyTwo());
+        $("#resultOne").append(`<hr>`);
+        $("#resultOne").append(multiplybyTen());
+    });
+
+});
 
