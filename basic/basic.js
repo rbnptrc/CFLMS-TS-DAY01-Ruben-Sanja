@@ -1,5 +1,4 @@
 var array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-console.log("OK");
 function multiplybyOne() {
     var output = "";
     for (var i = 0; i < array.length; i++) {
@@ -12,7 +11,7 @@ function multiplybyTwo() {
     var output = "";
     for (var i = 0; i < array.length; i++) {
         var result = array[i] * 2;
-        output += array[i] + " X 1 = " + result + " <br> ";
+        output += array[i] + " X 2 = " + result + " <br> ";
     }
     return output;
 }
@@ -20,7 +19,7 @@ function multiplybyTen() {
     var output = "";
     for (var i = 0; i < array.length; i++) {
         var result = array[i] * 10;
-        output += array[i] + " X 1 = " + result + " <br>";
+        output += array[i] + " X 10 = " + result + " <br>";
     }
     return output;
 }
