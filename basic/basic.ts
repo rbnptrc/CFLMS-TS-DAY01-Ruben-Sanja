@@ -29,6 +29,7 @@ function multiplybyTen() {
 
 $(document).ready(function() {
     $("#one").on("click", function(){
+        $("#resultOne").text("");
         $("#resultOne").append(multiplybyOne());
         $("#resultOne").append(`<hr>`);
         $("#resultOne").append(multiplybyTwo());
