@@ -4,11 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <style>
+        .box {
+            margin-right: 5rem;
+            text-align: center;
+        }
+        .container{
+            display:flex;
+        }
+
+        #resultTwo {
+            background-color: aqua;
+        }
+    </style>
     <title>Basic TS</title>
 </head>
 <body>
-    <button id="one">Click for First Exercise</button>
-    <div id="resultOne"></div>
+    <div class="container">
+        <div class="box">
+            <button id="one">Click for First Exercise</button>
+            <div id="resultOne"></div>
+        </div>
+        <div class="box">
+            <!-- <button id="second">Click for second Exercise</button> -->
+            <div id="resultTwo"></div>
+        </div>
+    </div>
     <script src="basic.js"></script>
+    <script src="basic2.js"></script>
 </body>
 </html>

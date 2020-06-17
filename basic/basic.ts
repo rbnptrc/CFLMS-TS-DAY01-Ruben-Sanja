@@ -1,5 +1,4 @@
 var array : Array<number> = [1,2,3,4,5,6,7,8,9,10];
-console.log("OK");
 function multiplybyOne() {
     let output : any = ""
     for (let i = 0; i < array.length; i++) {
